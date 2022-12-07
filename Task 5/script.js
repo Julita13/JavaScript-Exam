@@ -19,3 +19,22 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+// 1 Funkcija: 
+
+function filterDogOwners(array) {
+  const usersWithDog = array.filter(user => user.hasDog);
+  console.log(usersWithDog);
+};
+
+filterDogOwners(users);
+
+// 2 Funkcija: 
+
+function filterAdults(array) {
+  const adultsOnly = array.filter(user => user.age >= 18 );
+  const adultUsers = adultsOnly.map(user => user.name);
+  console.log(adultUsers);
+};
+
+filterAdults(users);
