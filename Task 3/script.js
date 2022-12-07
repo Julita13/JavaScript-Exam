@@ -14,7 +14,6 @@ būti stilizuota su CSS ir būti responsive;
 const ENDPOINT = 'https://api.github.com/users';
 
 const showUsersButton = document.querySelector("#btn");
-const pressButtonMessage = document.querySelector("#message");
 
 function showUsers(users) {
   const finalOutput = document.querySelector("#output");
