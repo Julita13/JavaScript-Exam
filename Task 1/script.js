@@ -24,9 +24,9 @@ myForm.addEventListener("submit", (e) => {
     // console.log(ounces);
     result.innerHTML = 
         `
-            <h1> ${kilograms} kilograms = <span>${pounds}</span> pounds </h1>
-            <h1> ${kilograms} kilograms = <span>${grams}</span> grams </h1>
-            <h1> ${kilograms} kilograms = <span>${ounces}</span> ounces </h1>
+            <h2> ${kilograms} kilograms = <span>${pounds}</span> pounds </h2>
+            <h2> ${kilograms} kilograms = <span>${grams}</span> grams </h2>
+            <h2> ${kilograms} kilograms = <span>${ounces}</span> ounces </h2>
         `;
     document.querySelector("#search").value = "";
 })
