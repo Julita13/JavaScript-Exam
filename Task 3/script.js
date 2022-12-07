@@ -12,3 +12,51 @@ būti stilizuota su CSS ir būti responsive;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'https://api.github.com/users';
+
+const showUsersButton = document.querySelector("#btn");
+const pressButtonMessage = document.querySelector("#message");
+
+function showUsers(users) {
+  const finalOutput = document.querySelector("#output");
+  finalOutput.innerHTML = "";
+
+  users.forEach(person => {
+    const photo = document.createElement("img");
+    photo.src = person.avatar_url;
+    const personsPhoto = document.createElement("div");
+    personsPhoto.append(photo);
+
+    const personLogin = document.createElement("p");
+    personLogin.style.cssText = "text-align: center; color: darkblue; font-weight: bolder; padding: 0.8rem";
+    personLogin.innerText = `${person.login}`;
+
+    const personProfileCard = document.createElement("div");
+    personProfileCard.setAttribute("class", "profile");
+    personProfileCard.append(personsPhoto, personLogin);
+
+    finalOutput.append(personProfileCard);
+  })
+};
+
+async function getUsers() {
+  try {
+    const response = await fetch(ENDPOINT);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      return data;
+    }
+  } catch (error) {
+    console.log(`message: `, error.message);
+  }
+};
+
+async function init() {
+  const data = await getUsers();
+  showUsers(data);
+};
+
+showUsersButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  init();
+})
