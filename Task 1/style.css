@@ -64,12 +64,13 @@ form {
   }
 }
 
+/* additional style modifications start from here:  */
 
 h2 {
   font-size: 2em;
   font-weight: lighter;
   text-align: center;
-  color: rgb(30, 30, 30);
+  color: rgb(12, 4, 85);
   padding: 0.5rem;
   border-bottom: 1px solid grey;
 }
@@ -85,6 +86,3 @@ span {
   color: red
 }
 
-#search {
-  color: grey;
-}

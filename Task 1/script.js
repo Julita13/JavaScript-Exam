@@ -14,14 +14,10 @@ const result = document.querySelector("#output");
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const kilograms = document.querySelector("#search").value;
-
+    // console.log(kilograms);
     const pounds = (kilograms * 2.2046).toFixed(2);
     const grams = (kilograms / 0.0010000).toFixed(2);
     const ounces = (kilograms * 35.274).toFixed(2);
-    // console.log(kilograms);
-    // console.log(pounds);
-    // console.log(grams);
-    // console.log(ounces);
     result.innerHTML = 
         `
             <h2> ${kilograms} kilograms = <span>${pounds}</span> pounds </h2>
@@ -30,3 +26,5 @@ myForm.addEventListener("submit", (e) => {
         `;
     document.querySelector("#search").value = "";
 })
+
+// h2 tagas pasirinktas todėl, kad h1 jau buvo panaudotas index.html'e - idant būtų išlaikomas kodo vientisumas ;)
