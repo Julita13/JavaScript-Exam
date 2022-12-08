@@ -24,7 +24,8 @@ class Movie{
         } else {
             return false;
         }
-        //  return this.budget > 100000000 ? true : false  // irgi veikia, ištrinus if'ą :)
+        //  return this.budget > 100000000 ? true : false  // irgi veikia, ištrinus if'ą
+        //  return this.budget > 100000000 // <---- veikiausiai "švariausias" kodo užrašymas, ištrinus if'ą :)
     }
 };
 

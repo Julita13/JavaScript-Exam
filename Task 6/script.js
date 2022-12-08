@@ -23,7 +23,7 @@ const users = [
 // 1 funkcija: 
 function getUserAverageAge(array) {
   const averageAge = array.reduce((acc, user) => acc + user.age / array.length, 0).toFixed(2);
-  console.log(`Visų vartotojų amžiaus vidurkis: ~${averageAge} metai`);
+  console.log(`Visų vartotojų amžiaus vidurkis: ~ ${averageAge} metai`);
 }
 
 getUserAverageAge(users);
