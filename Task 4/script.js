@@ -24,9 +24,9 @@ const fetchData = async () => {
     }
   };
 
-  function showCars(car) {
-      car.forEach(item => {
-          resultWindow.innerHTML += `<div class='brand'><div class='cars'> ${item.brand}</div> <div class='model'> ${item.models}</div></div>`
+  function showCars(cars) {
+      cars.forEach(item => {
+          resultWindow.innerHTML += `<div class='brand'><div class='cars'> ${item.brand}</div> <div class='model'> ${item.models}</div></div>`;
       });
   };
 
