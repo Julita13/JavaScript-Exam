@@ -79,4 +79,5 @@ img {
   border-radius: 1rem;
   text-decoration: underline;
   font-size: 1.3rem;
+  cursor: pointer;
 }
