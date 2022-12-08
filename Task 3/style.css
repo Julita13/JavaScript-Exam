@@ -53,9 +53,31 @@
 }
 
 .output-cointainer #output {
-  width: 80%;
+  width: 70%;
+  justify-content: center;
   margin-top: 25px;
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 9rem;
+  height: 9rem;
+  padding: 0.5rem;
+}
+
+.profile {
+  border: 1px solid lightgrey; 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+  margin: 1.5rem;
+}
+.profile:hover {
+  background-color: lightgrey;
+  border-radius: 1rem;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  cursor: pointer;
 }

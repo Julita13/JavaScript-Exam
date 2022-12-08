@@ -19,3 +19,20 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+// 1 funkcija: 
+function getUserAverageAge(array) {
+  const averageAge = array.reduce((acc, user) => acc + user.age / array.length, 0).toFixed(2);
+  console.log(`Visų vartotojų amžiaus vidurkis: ~ ${averageAge} metai`);
+}
+
+getUserAverageAge(users);
+
+// 2 funkcija: 
+
+function getUsersNames(array) {
+  const namesOnly = array.map(user => user.name);
+  console.log(namesOnly);
+};
+
+getUsersNames(users);

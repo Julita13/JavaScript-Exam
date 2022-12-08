@@ -63,3 +63,26 @@ form {
     font-size: 2em;
   }
 }
+
+/* additional style modifications start from here:  */
+
+h2 {
+  font-size: 2em;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(12, 4, 85);
+  padding: 0.5rem;
+  border-bottom: 1px solid grey;
+}
+
+#output {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+span {
+  text-decoration: underline;
+  color: red
+}
+

@@ -23,7 +23,46 @@
   align-items: center;
 }
 
+/* modifications start here:  */
+
 .container h1 {
   margin-top: 50px;
   color: #333;
+  margin-bottom: 2rem;
 }
+
+.brand {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: aquamarine;
+  border: 1px solid darkgreen;
+}
+
+.brand:nth-child(2n) {
+  background-color: rgb(27, 189, 135);
+}
+
+.cars {
+  font-size: 2rem;
+  color: darkgreen;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
+.cars:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.model {
+  font-size: 1.2rem;
+}
+
+.model:hover {
+  color: rgb(16, 90, 16);
+  cursor: pointer;
+}
+

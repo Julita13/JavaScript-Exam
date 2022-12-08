@@ -19,3 +19,34 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+// 1 Funkcija: 
+
+function filterDogOwners(array) {
+  const usersWithDog = array.filter(user => user.hasDog);
+  console.log(usersWithDog);
+};
+
+filterDogOwners(users);
+
+// Kadangi pagal užduoties aprašymą lieka nelabai aišku, ar grąžinti reikia masyvą su šunis turinčiais vartotojais, 
+// ar tiesiog vartotojų, turinčių šunis, sąrašą, tai pridedu ir antrąjam atvejui pritaikytą sprendimo būdą: 
+
+// function filterDogOwners2(array){
+//   const filteredArray = array.filter(user => user.hasDog);
+//   const usersWithDog = filteredArray.map(user => user.name);
+//   // console.log(usersWithDog)
+//   console.log(`Vartotojų, turinčių augintinius, sąrašas: ${usersWithDog}`)
+// };
+
+// filterDogOwners2(users);
+
+// 2 Funkcija: 
+
+function filterAdults(array) {
+  const adults = array.filter(user => user.age >= 18);
+  console.log(adults);
+}
+
+filterAdults(users);
+
